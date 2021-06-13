@@ -6,7 +6,7 @@
 
 ## Полезные настройки
 
-- Prettier
+### Prettier
   ```
  "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
