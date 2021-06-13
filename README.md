@@ -30,3 +30,21 @@
         "Red"
     ],
   ```
+
+  ### Bracket Pair Colorizer
+  ```
+"bracketPairColorizer.consecutivePairColors": [
+        ["<", "</"],
+        ["<", "/>"],
+        ["(", ")"],
+        ["[", "]"],
+        ["{", "}"],
+        ["Gold", "Orchid", "LightSkyBlue"],
+        "Red"
+    ],
+  ```
+
+    ### Code Spell Checker
+  ```
+"cSpell.language": "en, ru-RU, uk-UK",
+  ```
