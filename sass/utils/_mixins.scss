@@ -1,12 +1,46 @@
+// Наша сетка
+@mixin parentGrid() {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+@mixin itemGrid() {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+@mixin font-source(
+  $size: false,
+  $colour: false,
+  $weight: false,
+  $ls: false,
+  $lh: false
+) {
+  @if $size {
+    font-size: $size;
+  }
+
+  @if $colour {
+    color: $colour;
+  }
+
+  @if $weight {
+    font-weight: $weight;
+  }
+
+  @if $ls {
+    letter-spacing: $ls;
+  }
+
+  @if $lh {
+    line-height: $lh;
+  }
+}
+
 @mixin centeredFlex($type: flex, $main-axis: center, $secondary-axis: center) {
   display: $type;
   justify-content: $main-axis;
   align-items: $secondary-axis;
-}
-
-@mixin wrappedFlex($type: flex, $line-wrapping: wrap) {
-  display: $type;
-  flex-wrap: $line-wrapping;
-  margin-top: -30px;
-  margin-left: -30px;
 }

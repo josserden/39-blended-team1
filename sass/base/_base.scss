@@ -35,6 +35,8 @@ ol {
 /* Задан, чтобы убрать нижний отступ у картинок */
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 a {

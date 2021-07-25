@@ -1,28 +1,35 @@
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 
-  background-color: $footer-bckg-color;
-  background-image: linear-gradient($hero-overlay-color, $hero-overlay-color),
-    url(../images/hero-bcg-img.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: {
+    color: $footer-bckg-color;
+    image: linear-gradient($hero-overlay-color, $hero-overlay-color),
+      url(../images/hero-bcg-img.jpg);
+    size: cover;
+    repeat: no-repeat;
+    position: center;
+  }
 
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 .hero-title {
   margin: 0;
   margin-bottom: 30px;
-
-  color: $hero-text-color;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
+  @include font-source(26px, $hero-text-color, 900, 0.06em, 1.62);
   text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 .hero-button {
   @extend %button;
