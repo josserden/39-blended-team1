@@ -1,12 +1,7 @@
 .features-section {
   padding-bottom: 94px;
 }
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
+
 .features-section__title {
   @extend %section-title;
 }
