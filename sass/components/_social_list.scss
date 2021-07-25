@@ -1,0 +1,32 @@
+.social-list {
+  @include centeredFlex;
+}
+.social-list__item {
+  width: 44px;
+  height: 44px;
+}
+.social-list__item:not(:first-child) {
+  margin-left: 10px;
+}
+.social-list__link {
+  @include centeredFlex;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  fill: $primary-icon-fill;
+  background-color: $whitetext-color;
+
+  transition: fill 250ms $transform-timing-function,
+    background-color 250ms $transform-timing-function;
+
+  &:focus,
+  &:hover {
+    background-color: $accent-color;
+    fill: $whitetext-color;
+  }
+}
+.social-list__icon {
+  width: 20px;
+  height: 20px;
+}

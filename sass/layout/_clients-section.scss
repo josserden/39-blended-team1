@@ -1,0 +1,35 @@
+.clients-section {
+  @extend %section-paddings;
+}
+
+.clients-section__title {
+  @extend %section-title;
+}
+.clients-list {
+  display: flex;
+}
+.clients-list__item {
+  width: 170px;
+  height: 92px;
+}
+.clients-list__item:not(:first-child) {
+  margin-left: 30px;
+}
+.clients-list__link {
+  @include centeredFlex;
+  width: 100%;
+  height: 100%;
+  border: 1px solid $primary-icon-fill;
+  border-radius: 4px;
+
+  fill: $primary-icon-fill;
+
+  transition: fill 250ms $transform-timing-function, border 250ms $transform-timing-function;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    border: 1px solid $accent-color;
+    outline-color: $accent-color;
+  }
+}

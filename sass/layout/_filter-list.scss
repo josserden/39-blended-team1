@@ -1,0 +1,39 @@
+.exhibition-section {
+  @extend %section-paddings;
+}
+.filter-list {
+  @include centeredFlex;
+  margin-bottom: 50px;
+}
+.filter-list__item:not(:first-child) {
+  margin-left: 8px;
+}
+.filter-list__button {
+  border-radius: 4px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 22px;
+  padding-left: 22px;
+  border: 1px solid transparent;
+
+  background-color: $secondary-bckg-color;
+  color: $title-text-color;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  cursor: pointer;
+
+  transition: color 250ms $transform-timing-function,
+    background-color 250ms $transform-timing-function, box-shadow 250ms $transform-timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $whitetext-color;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08),
+      0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  }
+}

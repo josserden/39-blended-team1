@@ -1,0 +1,64 @@
+.exhibition-list {
+  @include wrappedFlex;
+}
+.exhibition-list__item {
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc((100% - 90px) / 3);
+}
+.exhibition-list__link {
+  display: block;
+  transition: box-shadow 250ms $transform-timing-function;
+
+  &:hover,
+  &:focus {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  }
+}
+.exhibition-list__card-thumb {
+  position: relative;
+  overflow: hidden;
+}
+.exhibition-list__overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+
+  background-color: $portfolio-overlay-color;
+  color: $whitetext-color;
+
+  transform: translateY(100%);
+  transition: transform 250ms $transform-timing-function;
+
+  .exhibition-list__link:hover &,
+  .exhibition-list__link:focus & {
+    transform: translateY(0);
+    transition: transform 250ms $transform-timing-function;
+  }
+}
+.exhibition-list__card-meta {
+  padding: 20px 24px;
+  border-left: 1px solid $subimage-box-color;
+  border-right: 1px solid $subimage-box-color;
+  border-bottom: 1px solid $subimage-box-color;
+}
+.exhibition-list__card-title {
+  color: $title-text-color;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+.exhibition-list__card-description {
+  font-size: 16px;
+  line-height: 1.88;
+}

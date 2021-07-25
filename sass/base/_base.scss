@@ -1,0 +1,49 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  background-color: $primary-bckg-color;
+  color: $primary-text-color;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+  font-style: normal;
+}
+/* Сброс геометрии элементов по - умолчанию. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  padding-left: 0;
+  list-style: none;
+  list-style-type: none;
+}
+/* Задан, чтобы убрать нижний отступ у картинок */
+img {
+  display: block;
+}
+a {
+  color: $title-text-color;
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}

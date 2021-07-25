@@ -1,0 +1,41 @@
+.features-section {
+  padding-bottom: 94px;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.features-section__title {
+  @extend %section-title;
+}
+.features-list {
+  @include wrappedFlex;
+}
+.features-list__item {
+  position: relative;
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc((100% - 90px) / 3);
+}
+
+.features-list__overlay {
+  position: absolute;
+  height: 70px;
+  width: 100%;
+  bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  background-color: $features-overlay-color;
+}
+.features-list__label {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  color: $whitetext-color;
+}
