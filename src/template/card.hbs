@@ -1,0 +1,20 @@
+{{#each this}}
+
+  <div class='col p-3'>
+    <div class='shadow-sm'>
+      <div class='overflow-hidden' style='height: 260px;'>
+        <img src={{src.medium}} class='card-img-top' alt={{photographer}} />
+      </div>
+
+      <div class='card-body'>
+        <h5 class='card-title'>{{photographer}}</h5>
+        <a
+          href={{photographer_url}}
+          class='btn btn-outline-info'
+          target='_blank'
+        >link</a>
+      </div>
+    </div>
+  </div>
+
+{{/each}}
